@@ -15,21 +15,21 @@
 
         <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
 
-        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+        <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula3/">
             <label for="">Nome:</label>
-            <input type="text" name="nome">
+            <input type="text" required placeholder="Digite seu nome completo" name="nome">
             <label for="">Data de Nascimento:</label>
-            <input type="date" name="data-nascimento">
+            <input type="date" min="1900-01-01" max="2004-01-01" name="data-nascimento" required>
             <label for="">Email:</label>
-            <input type="email" name="email">
+            <input type="email" placeholder="exemplo@email.com" name="email" required>
             <label for="">Telefone:</label>
-            <input type="tel" name="telefone">
+            <input type="tel" maxlength="14" placeholder="(XX) X XXXX-XXXX" name="telefone" required>
             <label for="">Melhro dia para vencimento:</label>
-            <input type="number" name="dia-vencimento">
+            <input type="number" min="10" max="20" placeholder="Valores entre 10 e 20" name="dia-vencimento" required>
             <label for="">Login:</label>
-            <input type="text" name="login">
+            <input type="text" minlength="3" name="login" required>
             <label for="">Senha:</label>
-            <input type="password" name="senha">
+            <input type="password" minlength="4" maxlength="8" name="senha" required>
             <button type="submit">Enviar Matricula</button>
         </form>
     </main>
